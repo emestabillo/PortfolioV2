@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
   font-style: normal;
@@ -44,7 +44,6 @@ body {
 }
 
 .headline p {
-  font-family: 'Roboto', sans-serif;
   animation: moveInRight 1s ease-out;
   font-size: 1.5em;
   padding-left: 3px;
@@ -69,7 +68,6 @@ hr {
 .social h3 {
   margin-right: 20px;
   padding-left: 4px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .social_tabs {
@@ -137,7 +135,6 @@ hr {
 .rightpanel p, ul {
   font-size: 19px;
   line-height: 28px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .pg-right {
