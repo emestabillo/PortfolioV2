@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif; 
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  color: #20222B;
+  font-size: 1.1em;
+}
+
+.main_container{
+  display: flex;
+  height: 100vh;
+}
+
+.leftpanel {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 70px 100px 65px;
+  color: #fff;
+  background-color: #347c83;
+  opacity: 0.8;
+}
+
+.leftpanel, .rightpanel {
+  display: block;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  height: 100%
+}
+
+.headline h1{
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 3px;
+  font-size: 3.5em;
+  animation: moveInLeft 1s ease-out;
+}
+
+.headline p {
+  font-family: 'Roboto', sans-serif;
+  animation: moveInRight 1s ease-out;
+  font-size: 1.5em;
+  padding-left: 3px;
+ }
+
+hr {
+  width: 95%;
+}
+
+.social {
+  display: flex;
+  font-size: 1.3em;
+}
+
+.social, .btn {
+  animation-name: fadeIn;
+  animation-duration: 0.9s;
+  animation-delay: 1.1s;
+  animation-fill-mode: both;
+}
+
+.social h3 {
+  margin-right: 20px;
+  padding-left: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social_tabs {
+  padding-top: 2px;
+}
+
+.social_tabs li {
+  display: inline-block;
+  padding: 0 2.5px;
+}
+
+.pages:link, 
+.pages:visited {
+  display: inline-block;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.pg-left {
+  color: #01183D;
+}
+
+.pages:hover {
+  transform: translateY(-3px);
+}
+
+.pages:active {
+  transform: translateY(-1px);
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #0a0c15;
+  color: white;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 35px;
+  transition: all .2s;
+  font-size: 0.75em;
+}
+
+.photo.myimg {
+  background-image: url(hoboken.jpg);
+  background-position: center center;
+}
+
+.photo {
+  display: block;
+  padding: 0;
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-list {
+  padding: 64px 64px 32px;
+}
+
+.rightpanel h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.rightpanel p, ul {
+  font-size: 19px;
+  line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pg-right {
+  color: #2e4874
+}
+
+.apps {
+  padding-bottom: 20px;
+}
+
+.app-description {
+  padding: 5px 0;
+}
+
+.github-link {
+  padding-right: 15px;
+}
+
+.rightpanel {
+  right: 0;
+  overflow: auto;
+}
+
+.tools {
+  padding: 32px 64px;
+  background-color: #f0f0f0;
+  overflow: auto;
+}
+
+.tools_list{
+ margin-left: 20px;
+}
+
+.tools li {
+  float: left;
+  padding-right: 1.3em;
+}
+
+.footer {
+  text-align: right;
+  font-size: 12px;
+  color: #99A8AD;
+  font-family: 'Oswald', sans-serif;
+  padding: 4px 8px;
+}
+
+.about-me{
+  padding: 32px 64px 32px;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .leftpanel {   
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+  }
+
+  .rightpanel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .leftpanel {   
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 70px;
+    overflow: auto;
+  }
+
+  .rightpanel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .main_container {
+      height: auto;
+      overflow: auto;
+      flex-wrap: wrap;
+  }
+}
