@@ -39,7 +39,7 @@ body {
   color: #fff;
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 3px;
-  font-size: 3.5em;
+  font-size: 2.8em;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -183,6 +183,10 @@ hr {
 
 .about-me{
   padding: 32px 64px 32px;
+}
+
+.sweet {
+  font-weight: 900px;
 }
 
 @keyframes moveInRight {
