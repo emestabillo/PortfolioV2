@@ -23,8 +23,20 @@ body {
   flex-direction: column;
   padding: 200px 70px 100px 65px;
   color: #fff;
-  background-color: #347c83;
-  opacity: 0.8;
+  background-image: linear-gradient(to right top, #42426a, #355278, #296180, #276f83, #347c83);  
+  opacity: 0.9;
+}
+
+.leftpanel::after {
+  content: "";
+  background: url(diagonal_striped_brick_@2X.png) repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
 }
 
 .leftpanel, .rightpanel {
@@ -79,8 +91,8 @@ hr {
   padding: 0 2.5px;
 }
 
-.pages:link, 
-.pages:visited {
+.pages:link 
+/*.pages:visited */{
   display: inline-block;
   text-decoration: none;
   transition: all .2s;
@@ -96,6 +108,16 @@ hr {
 
 .pages:active {
   transform: translateY(-1px);
+}
+
+.more {
+  text-decoration: underline;
+  padding: 20px 20px 20px 0px;
+  font-size: 23px;
+}
+
+a.morelink {
+  color: #2e4874;
 }
 
 .btn:link, .btn:visited {
