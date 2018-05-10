@@ -41,10 +41,10 @@ body {
 
 .leftcontent {
   margin: 200px 70px 100px 65px;
-  animation: fadeIn;
+  /*animation: fadeIn;
   animation-duration: 0.9s;
   animation-delay: .5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
 }
 
 .leftpanel, .rightpanel {
@@ -53,6 +53,10 @@ body {
   width: 50%;
   top: 0;
   height: 100%
+}
+
+.headline{
+  animation: moveInRight 1s ease-out;
 }
 
 .headline h1{
@@ -81,12 +85,17 @@ hr {
   width: 95%;
 }
 
+.connect {
+  animation: moveInLeft 1s ease-out;
+}
+
 .social {
   display: flex;
   font-size: 1.3em;
+  /*animation: moveInLeft 1s ease-out;*/
 }
 
-.social, .btn {
+/*.social, .btn {*/
   /*animation-name: fadeIn;
   animation-duration: 0.9s;
   animation-delay: 0.5s;
@@ -108,7 +117,7 @@ hr {
 }
 
 .pages:link 
-/*.pages:visited */{
+.pages:visited {
   display: inline-block;
   text-decoration: none;
   transition: all .2s;
