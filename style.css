@@ -21,7 +21,7 @@ body {
 .leftpanel {
   display: flex;
   flex-direction: column;
-  padding: 200px 70px 100px 65px;
+  /*padding: 200px 70px 100px 65px;*/
   color: #fff;
   background-image: linear-gradient(to right top, #42426a, #355278, #296180, #276f83, #347c83);  
   opacity: 0.9;
@@ -39,6 +39,14 @@ body {
   z-index: -1;  
 }
 
+.leftcontent {
+  margin: 200px 70px 100px 65px;
+  animation: fadeIn;
+  animation-duration: 0.9s;
+  animation-delay: .5s;
+  animation-fill-mode: both;
+}
+
 .leftpanel, .rightpanel {
   display: block;
   position: fixed;
@@ -52,18 +60,18 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 3px;
   font-size: 2.8em;
-  animation: fadeIn;
+  /*animation: fadeIn;
   animation-duration: 0.9s;
   animation-delay: .5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
   /*animation: moveInLeft 1s ease-out;*/
 }
 
 .headline p {
-  animation: fadeIn;
+  /*animation: fadeIn;
   animation-duration: 0.9s;
   animation-delay: .5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
   /*animation: moveInRight 1s ease-out;*/
   font-size: 1.5em;
   padding-left: 3px;
@@ -79,10 +87,10 @@ hr {
 }
 
 .social, .btn {
-  animation-name: fadeIn;
+  /*animation-name: fadeIn;
   animation-duration: 0.9s;
   animation-delay: 0.5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
 }
 
 .social h3 {
@@ -298,7 +306,7 @@ a.morelink {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 70px;
+    /*padding: 70px;*/
     overflow: auto;
   }
 
