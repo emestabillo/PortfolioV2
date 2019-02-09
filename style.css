@@ -99,8 +99,8 @@ hr {
   /*animation-name: fadeIn;
   animation-duration: 0.9s;
   animation-delay: 0.5s;
-  animation-fill-mode: both;*/
-}
+  animation-fill-mode: both;
+} */
 
 .social h3 {
   margin-right: 20px;
@@ -188,7 +188,7 @@ a.morelink {
 }
 
 .project-list {
-  padding: 64px 64px 32px;
+  padding: 34px 64px 32px;
 }
 
 .rightpanel h1 {
@@ -222,7 +222,7 @@ a.morelink {
 }
 
 .tools {
-  padding: 32px 64px;
+  padding: 50px 64px;
   background-color: #f0f0f0;
   overflow: auto;
 }
