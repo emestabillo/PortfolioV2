@@ -201,6 +201,7 @@ a.morelink {
 
 .apps {
   padding-bottom: 20px;
+  display: flex;
 }
 
 .app-description {
@@ -337,4 +338,13 @@ a.morelink {
       overflow: auto;
       flex-wrap: wrap;
   }
+}
+
+.info {
+  margin-left: 50px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 350px;
 }
